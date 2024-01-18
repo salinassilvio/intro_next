@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "pretty-quick"
+    "format": "pretty-quick",
+    "ts-lint": "tsc --noEmit --incremental",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "14.0.4",
@@ -15,12 +17,15 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "husky": "^8.0.0",
     "postcss": "^8",
     "prettier": "^3.2.4",
     "pretty-quick": "^4.0.0",
